@@ -1,0 +1,212 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Recipe App</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&display=swap">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> -->
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <nav>
+                <div class="logo">
+                    <a href="/index.html" id="logo">MealsPoint</a>
+                </div>
+                <!-- <a href="#home">Home</a> -->
+                <!-- <a href="#recipes">Recipes</a> -->
+                <!-- <a href="#add-recipe">Add Recipe</a> -->
+                <!-- <a href="/category/category.html">Category</a> -->
+                <!-- <a href="#shopping-list">Shopping List</a> -->
+                <a href="/featured.html">Featured</a>
+                <a href="/about.html">About Us</a>
+                <a href="#contact" id="contactButton">Contact</a>
+                <div class="cart-container">
+                    <a href="#cart" class="cart-icon">&#x1F6D2;</a>
+                </div>
+                <!-- You can add login/logout or language selector links here -->
+            </nav>
+        </div>
+        <!-- Loading spinner
+        <div class="loading-spinner" id="loadingSpinner">&#9203; Loading...</div> -->
+
+
+        <div class="meal-wrapper">
+            <div class="meal-search">
+                <h2 class="title">Find Meals For Your Ingredients</h2>
+                <blockquote>Real food doesn't have ingredients, real food is ingredients <br>
+                    <cite> - Jamie Oliver</cite>
+                </blockquote>
+                <div class="meal-search-box">
+
+                    <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+                    <button type="submit" class="search-btn btn" id="search-btn" onclick="search()">🔍</button>
+                </div>
+            </div>
+            <div class="meal-result">
+                <h2 class="title">Your Search Results</h2>
+
+                <div id="meal">
+                    <!--meal item-->
+                    <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="/assets/img/pancake.png" alt="food" height="260px">
+                        </div>
+                        <div class="meal-name">
+                            <h3>Pancake</h3>
+                            <a href="#" class="recipe-btn" data-meal="cake" data-mealid="52855">Get Recipe</a>
+                        </div>
+                    </div>
+                    <!--end of meal item-->
+                    <!--meal item-->
+                    <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="/assets/img/pizza.png" alt="food" height="260px">
+                        </div>
+                        <div class="meal-name">
+                            <h3>Pizza</h3>
+                            <a href="#" class="recipe-btn" data-meal="Pizza">Get Recipe</a>
+                        </div>
+                    </div>
+                    <!--end of meal item-->
+                    <!--  meal item  -->
+                    <div class="meal-item">
+                        <div class="meal-img">
+                            <img src="/assets/img/biryani.png" alt="food" height="260px">
+                        </div>
+                        <div class="meal-name">
+                            <h3>Biryani</h3>
+                            <a href="#" class="recipe-btn" data-meal="biryani">Get Recipe</a>
+                        </div>
+                    </div>
+                    <!--end of meal item-->
+                </div>
+            </div>
+        </div>
+
+        <div class="meal-details">
+            <!--recipe close btn-->
+            <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                <i class="fas fa-times"></i>
+
+            </button>
+            <!--meal content-->
+            <div class="meal-details-content">
+                <!--- <h2 class="recipe-title">Meals Name Here</h2>
+                    <p class="recipe-category">Category Name</p>
+                    <div class="recipe-instruct">
+                        <h3>Instructions</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                At recusandae et, aliquid non quis provident laboriosam enim itaque obcaecati delectus atque ipsa quos praesentium amet nam rerum corporis quisquam tempora, autem corrupti doloribus debitis libero! 
+                Recusandae nostrum ea, animi dolore saepe perspiciatis consequuntur sit enim rerum adipisci consectetur! Dignissimos enim aperiam accusamus at ad.
+                 Molestiae eaque illum mollitia ipsam aspernatur laborum reprehenderit soluta nisi laboriosam consequatur tempora officia, 
+                 ducimus dolor culpa dolores velit consequuntur voluptatem harum hic nemo itaque explicabo quam nihil. 
+                 Praesentium possimus, corrupti saepe quaerat necessitatibus alias aliquam, excepturi nulla rerum harum, 
+                 error deserunt esse eius quidem ipsa!</p>
+                </div>
+                <div class="recipe-meal-img">
+                    <img src="images/dosa.png" alt="">
+                </div>
+                <div class="recipe-link">
+                    <a href="#" target="_blank">Watch Video</a>
+                </div>  -->
+            </div>
+        </div>
+    </div>
+
+    <!-- footer section -->
+    <!-- Add this section at the end of your HTML file, just before the closing body tag -->
+
+    <div id="contact" class="contact-info">
+        <footer>
+            <div class="footer-container">
+                <!-- Social Media Section -->
+                <div class="social-media">
+                    <h4>Follow Us</h4>
+                    <ul class="social-media-icons">
+                        <!-- Facebook icon -->
+                        <li><a href="https://www.facebook.com/your-page" target="_blank"><i
+                                    class="fab fa-facebook"></i>Facebook</a></li>
+                        <!-- Twitter icon -->
+                        <li><a href="https://twitter.com/your-handle" target="_blank"><i
+                                    class="fab fa-twitter"></i>Twitter</a></li>
+                        <!-- Instagram icon -->
+                        <li><a href="https://www.instagram.com/your_username/" target="_blank"><i
+                                    class="fab fa-instagram"></i>Instagram</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information Section -->
+                <div class="contact-info">
+                    <h4>Contact Information</h4>
+                    <p>123 Main Street, Cityville, Country</p>
+                    <p>Phone: +123 456 789</p>
+                </div>
+
+                <!-- Email Section -->
+                <div class="email">
+                    <h4>Email Address</h4>
+                    <p><a href="mailto:note262110@gmail.com" target="_blank"
+                            rel="noopener noreferrer">meals_point@gmail.com</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- footer section -->
+
+    <!-- Add this script tag to your HTML file -->
+    <!-- <script>
+        // Function to handle the API request and display the recipe details
+        function getRecipe(mealName) {
+            const apiUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${mealName}`;
+
+            // Make the API request
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    // Check if the API request was successful
+                    if (data.meals && data.meals.length > 0) {
+                        // Get the first meal (assuming there is only one result)
+                        const meal = data.meals[0];
+
+                        // Display the recipe details (customize this part based on your needs)
+                        alert(`Recipe for ${meal.strMeal}:\n${meal.strInstructions}`);
+                    } else {
+                        alert(`Recipe not found for ${mealName}. Please try again.`);
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching recipe:', error);
+                    alert('An error occurred while fetching the recipe. Please try again later.');
+                });
+        }
+
+        // Example: Attach the click event to the "Get Recipe" buttons for each meal item
+        const recipeButtons = document.querySelectorAll('.recipe-btn');
+        if (recipeButtons) {
+            recipeButtons.forEach(button => {
+                button.addEventListener('click', function (event) {
+                    event.preventDefault(); // Prevent the default behavior of the anchor tag
+                    const mealName = button.dataset.meal; // Get the meal name from the data attribute
+                    getRecipe(mealName);
+                });
+            });
+        }
+    </script> -->
+
+    <script src="/assets/js/script.js"></script>
+</body>
+
+</html>
